@@ -1,0 +1,179 @@
+\documentclass[]{styling}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+% Last Updated Date In Top Right : Comment out before finalizing.
+\lastupdated
+
+% Header
+\namesection{Jonathan Turner}{ %\urlstyle{same}\href{http://example.com}{example.com}| \href{http://example2.co}{example2.co}\\
+Holly Springs, GA | \href{mailto:turner@atlantissrv.com}{turner@atlantissrv.com} | \href{tel:6783783789}{678-378-3789}
+}
+
+%% Left Column
+
+\newsavebox{\ColA}
+\newsavebox{\ColB}
+
+\sbox{\ColA}{
+    \begin{minipage}[t]{0.33\textwidth}
+        \vspace{0pt} 
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     EDUCATION
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+        \section*{Education}
+        \hrule
+        \vspace{1 em}
+        \subsection{Kennesaw State (KSU)}
+        \descript{B.S. in Computer Science\newline Concentraion in Artificial Intelligence}
+        \location{May 2025 | Kennesaw, GA}
+        % College of Engineering \\
+        \location{GPA: 3.8}
+        \sectionsep
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     SKILLS
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+        \section*{Skills}
+        \hrule
+        \vspace{1 em}
+        \subsection{Programming}
+        \begin{tabbing}
+            \emphs{4+ years} \=– \space 
+            Java \textbullet{} Python \\
+            \emphs{3+ years} \>– \space 
+            HTML \textbullet{} VueJS  \\
+            \emphs{1+ years} \>– \space 
+            Matlab \textbullet{} R \textbullet{} C\#
+        \end{tabbing}
+        
+        \sectionsep
+
+        \subsection{Technology}
+        Docker \textbullet{} Docker Compose \\
+        PyTorch \textbullet{} OpenCV \textbullet{} YOLO \\
+        MySQL \textbullet{} MariaDB \\
+         
+        \sectionsep
+        \vspace{1 em}
+        
+        \subsection{Tools}
+        Git / GitHub \textbullet{} JetBrains Suite \\
+        VS Code \textbullet{} Script Automation \\
+        JUnit  \textbullet{} Teams \textbullet{} Virtualization \\
+        \sectionsep
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     COURSEWORK
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+        \section*{Coursework}
+        \hrule
+        \vspace{1 em}
+        Artificial Intelligence \\
+        Machine Vision \\
+        Deep Learning \\
+        Natural Language Processing \\
+        \sectionsep
+        
+    
+        
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     LINKS
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        
+        \section*{Socials}
+        \hrule
+        \vspace{1 em}
+        \begin{tabbing}
+            LinkedIn: \space \space \= \href{https://www.linkedin.com/in/lturnerjonathan}{\bf LTurnerJonathan} \\
+            Github: \> \href{https://github.com/JonathanLTurner03}{\bf JonathanLTurner03} \\
+            Portolio: \> \href{https://www.atlantissrv.com}{\bf www.atlantissrv.com} \\
+        \end{tabbing}
+        \sectionsep
+    \end{minipage}
+}
+%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\sbox{\ColB}{
+    \begin{minipage}[t]{0.6\textwidth}
+        \vspace{0pt} 
+        \section*{Experience}
+        \hrule
+        \vspace{1 em}
+        \runsubsection{Wyzant}
+        \descript{\hfill Undergraduate Computer Science Tutor }
+        \location{August 2024 – Present \hfill \textit{Holly Springs, GA}}
+        \vspace{.3 em}
+        \vspace{\topsep} % Hacky fix for awkward extra vertical space
+        \begin{tightemize}
+            \item Tutor students in coursework including Machine Learning, Algorithms 
+            \& Data Structures, Operating Systems, and Computer Organization \& Architecture.
+            \item Manage client relationships and scheduling, maintaining a five-star profile.
+        \end{tightemize}
+        \sectionsep
+
+        \runsubsection{Geek Squad}
+        \descript{\hfill Consulation \& Advanced Repair Agent }
+        \location{April 2021 – Present \hfill \textit{Kennesaw, GA}}
+        \begin{tightemize}
+            \item Diagnose and resolve technical hardware and software problems utilizing learned 
+            troubleshooting techniques and specialty software.
+            \item Conduct in-depth consultations with customers experiencing technological challenges, 
+            actively listening to understand their needs, frustrations, and goals.
+            \item Provide consistent and accurate communication and documentation to internal staff 
+            and customers.
+        \end{tightemize}
+        \sectionsep
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %     PROJECTS
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+        \section*{Projects}
+        \hrule
+        \vspace{1 em}
+        \runsubsection{GSO Website Unification}
+        \descript{\hfill Capstone Project}
+        \location{Jan 2025 – Present \hfill Lead Designer \& Developer}
+        \begin{tightemize}
+            \item Collaborate with a team to develop a proof-of-concept website consolidation 
+            project for the Georgia Symphony Orchestra, unifying multiple domains into a single, 
+            cohesive platform.
+            \item Design and implement custom WordPress themes, plugins, and API hooks to  
+            integrate the ticketing system more effectively and enhance overall site functionality.
+            \item Leverage modern web design practices and responsive development techniques to ensure 
+            an optimal user experience and consistent brand identity.
+        \end{tightemize}
+        \sectionsep
+
+        \runsubsection{IcarusEye}
+        \descript{\hfill Machine Vision Project}
+        \location{Aug 2024 – Present \hfill Real-time Drone Object Detection}
+        \begin{tightemize}
+            \item Develop IcarusEye, a real-time object detection and tracking application that leverages 
+            a custom YOLOv8s model trained on the Visdrone2019-DET dataset and integrates ByteTrack for 
+            robust performance.
+            \item Implement dynamic features including live control of confidence thresholds, model swapping, 
+            class omission, and FPS adjustments, enhancing customization and real-time responsiveness.
+            \item Optimize the application for edge device deployment, ensuring efficient resource management 
+            and reliable performance in varied operational environments regardless of drone capabilities.
+        \end{tightemize}
+        \sectionsep
+    \end{minipage}
+}
+
+\noindent\usebox{\ColA}\hfill\usebox{\ColB}
+
+\end{document}  \documentclass[]{article}

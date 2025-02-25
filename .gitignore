@@ -1,8 +1,8 @@
-.aux
-.fls
-.log
-.out
-.synctex.gz
-.tex.bak
-.tex.swp
-.fdb_latexmk
+*.aux
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.tex.bak
+*.tex.swp
+*.fdb_latexmk
