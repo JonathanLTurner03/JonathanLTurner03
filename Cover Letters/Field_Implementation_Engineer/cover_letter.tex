@@ -1,0 +1,76 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{Code/Application}
+% For more point sizes, you may use the extarticle class
+%
+% Fill in below:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Your information:
+%__________________________
+% Your Name:
+\author{Jonathan Turner}
+% Your Adress and Postal Code:
+\ProvideAdress{300 Prominence Point Pkwy}{Canton GA, 30114}{I}
+% Your e-mail:
+\ProvideEmail{turner@atlantissrv.com}
+% Your phone number:
+\ProvidePhone{+1 678 378 3789}{I}
+%.........................
+%
+%
+% Company Information:
+%__________________________
+% Company name and 
+\ProvideName{ST Engineering}{I}
+% Company adress and postal code
+\ProvideAdress{Atlanta}{Georgia}{II}
+%.........................
+%
+% Date:
+%__________________________
+\date{03.15.2025}{I}
+%.........................
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\input{Code/Preamble}
+\begin{document}
+\maketitle
+%
+% The main document:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Text:
+%__________________________
+% Import text:
+\input{Txt/Application-letter}
+% Horizontal line:
+\par
+\dotline
+\vspace{\baselineskip}
+% Attachments: 
+%.........................
+%
+% Signature:
+%__________________________
+\Signature{Sinccerly,}{Img/My_Signature}{width=5cm}
+%\SignatureLine{Sincerely,}{7cm}
+
+% Signature arguments:
+% ----------
+% First argument  (1st):        text displayed above signature
+% Second argument (2nd):        image path
+% Third argument  (3rd):        scaling of image
+%
+% Signature Line arguments:
+% -----------
+% First argument  (1st):        text displayed above signature
+% Second argument (2nd):        length of signature line
+% 
+%.........................
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\end{document}
+=
